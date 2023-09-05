@@ -1,4 +1,4 @@
-document.addEventListener("load", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector(".form");
     const dataTable = document.querySelector(".userTable");
 
@@ -11,7 +11,6 @@ document.addEventListener("load", function () {
 
         const FirstName = firstNameInput.value;
         const LastName = lastNameInput.value;
-
 
         const nameRegex = /^[A-Za-z\s]+$/;
 
