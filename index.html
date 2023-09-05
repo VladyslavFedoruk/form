@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <h2 class="h-title">Request a quote</h2>
+    <form class="form" action="">
+        <div class="rowFirst">
+            <div class="firstName">
+                <input placeholder="First name *" size="40" minlength="2" maxlength="40" class="text firstNameInput"
+                    type="text">
+            </div>
+            <div class="lastName">
+                <input placeholder="Last name *" size="40" minlength="2" maxlength="40" class="text lastNameInput"
+                    type="text">
+            </div>
+        </div>
+        <div class="rowSecond">
+            <div class="birthday">
+                <input placeholder="Birthday*" size="40" minlength="2" maxlength="40" class="birthdayInput" type="text">
+            </div>
+        </div>
+        <div class="rowThird">
+            <div class="gender">
+                <div class="genderFirst">
+                    <input class="radio" type="radio" id="genderChoice1" name="gender" value="man" />
+                    <label class="radioName" for="genderChoice1">Man</label>
+                </div>
+
+                <div class="genderSecond">
+                    <input class="radio" type="radio" id="genderChoice2" name="gender" value="woman" />
+                    <label class="radioName" for="genderChoice2">Woman</label>
+                </div>
+
+                <div class="genderThird">
+                    <input class="radio" type="radio" id="genderChoice3" name="gender" value="others" />
+                    <label class="radioName" for="genderChoice3">Others</label>
+                </div>
+            </div>
+        </div>
+        <div class="rowFource">
+            <select placeholder="Select your city*" name="cities" id="city-select">
+                <option value="">Please choose the city</option>
+                <option value="Kyiv">Kyiv</option>
+                <option value="Dnipro">Dnipro</option>
+                <option value="Zaporizhzhia">Zaporizhzhia</option>
+                <option value="Zhytomyr">Zhytomyr</option>
+                <option value="Lviv">Lviv</option>
+                <option value="Ivano">Ivano-Frankivsk</option>
+            </select>
+        </div>
+        <div class="rowFifce">
+            <textarea class="textarea" placeholder="Address" name="address" id="address" cols="40" rows="10"></textarea>
+        </div>
+        <div class="rowSix">
+            <label class="labelMain" for="checkbox">Languages which you know:
+                <div class="checkboxWrapper">
+                    <div>
+                        <input type="checkbox" id="ukrainian" name="ukrainian" checked />
+                        <label for="ukrainian">Ukrainian</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="russian" name="russian" />
+                        <label for="russian">Russian</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="english" name="english" />
+                        <label for="english">English</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="other" name="other" />
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div class="buttonWrapper">
+            <button type="submit">Save</button>
+        </div>
+    </form>
+
+    <div class="userTable">
+
+    </div>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
